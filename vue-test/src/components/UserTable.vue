@@ -1,11 +1,10 @@
-<!-- eslint-disable vue/valid-v-for -->
-<!-- eslint-disable vue/no-template-key -->
+<!-- eslint-disable vue/require-v-for-key -->
 <template>
     <table border="1">
       <thead>
         <tr>
           <th @click="sort('name')">Имя</th>
-          <th @click="sort('parentId')">Телефон</th>
+          <th @click="sort('phone')">Телефон</th>
         </tr>
       </thead>
       <tbody>
@@ -16,6 +15,7 @@
           :depth="0"
           @sort="sort"
         />
+
       </tbody>
     </table>
   </template>
@@ -29,7 +29,10 @@ export default {
     UserRow
   },
   props: {
-    users: Array
+    users: {
+      type: Array,
+      required: true
+    }
   },
   methods: {
     sort (key) {
@@ -38,3 +41,7 @@ export default {
   }
 }
 </script>
+
+<style>
+  
+</style>

@@ -34,11 +34,16 @@ export default {
       const user = {
         id: Date.now(),
         name: this.name,
+        phone: this.phone,
         parentId: this.parentId
       }
       this.$emit('save', user)
       this.$emit('close')
+    },
+    showUser () {
+
     }
+
   }
 }
 </script>

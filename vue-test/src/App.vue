@@ -77,7 +77,5 @@ export default {
 </script>
 
 <style>
-  .app {
-    background-color: aqua;
-  }
+
 </style>
