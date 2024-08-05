@@ -4,6 +4,10 @@
   "description": "A Vue.js project",
   "author": "Viacheslav",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://viacheslavchistiakov.github.io/Roistat-Test/"
+  },
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
